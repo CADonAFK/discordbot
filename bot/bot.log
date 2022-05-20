@@ -1,0 +1,1118 @@
+May 07 15:48:02 |                   asyncio | default_exception_handler |  ERROR | Exception in callback bot_task_callback(<Task finishe...' function.")>) at C:\Users\dfitz\PycharmProjects\cadart\bot\__main__.py:15
+handle: <Handle bot_task_callback(<Task finishe...' function.")>) at C:\Users\dfitz\PycharmProjects\cadart\bot\__main__.py:15>
+Traceback (most recent call last):
+  File "C:\Users\dfitz\.virtualenvs\cadart\lib\site-packages\discord\ext\commands\bot.py", line 922, in _load_from_module_spec
+    setup = getattr(lib, 'setup')
+AttributeError: module 'bot.core' has no attribute 'setup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\dfitz\PycharmProjects\cadart\bot\__main__.py", line 17, in bot_task_callback
+    raise future.exception()
+  File "C:\Users\dfitz\PycharmProjects\cadart\bot\__main__.py", line 32, in run_bot
+    await bot.load_extension(ext)
+  File "C:\Users\dfitz\.virtualenvs\cadart\lib\site-packages\discord\ext\commands\bot.py", line 994, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\dfitz\.virtualenvs\cadart\lib\site-packages\discord\ext\commands\bot.py", line 925, in _load_from_module_spec
+    raise errors.NoEntryPointError(key)
+discord.ext.commands.errors.NoEntryPointError: Extension 'bot.core' has no 'setup' function.
+May 07 16:24:56 |                   asyncio | default_exception_handler |  ERROR | Exception in callback bot_task_callback(<Task finishe...\\views.py)")>) at C:\Users\dfitz\PycharmProjects\cadart\bot\__main__.py:15
+handle: <Handle bot_task_callback(<Task finishe...\\views.py)")>) at C:\Users\dfitz\PycharmProjects\cadart\bot\__main__.py:15>
+Traceback (most recent call last):
+  File "C:\Users\dfitz\.virtualenvs\cadart\lib\site-packages\discord\ext\commands\bot.py", line 916, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\dfitz\PycharmProjects\cadart\bot\connect\cog.py", line 8, in <module>
+    from bot.connect.views import ConnectionsModal
+ImportError: cannot import name 'ConnectionsModal' from 'bot.connect.views' (C:\Users\dfitz\PycharmProjects\cadart\bot\connect\views.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\dfitz\PycharmProjects\cadart\bot\__main__.py", line 17, in bot_task_callback
+    raise future.exception()
+  File "C:\Users\dfitz\PycharmProjects\cadart\bot\__main__.py", line 32, in run_bot
+    await bot.load_extension(ext)
+  File "C:\Users\dfitz\.virtualenvs\cadart\lib\site-packages\discord\ext\commands\bot.py", line 994, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\dfitz\.virtualenvs\cadart\lib\site-packages\discord\ext\commands\bot.py", line 919, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'bot.connect.cog' raised an error: ImportError: cannot import name 'ConnectionsModal' from 'bot.connect.views' (C:\Users\dfitz\PycharmProjects\cadart\bot\connect\views.py)
+May 07 16:52:10 |                   asyncio | default_exception_handler |  ERROR | Exception in callback bot_task_callback(<Task finishe...y, line 36)")>) at C:\Users\dfitz\PycharmProjects\cadart\bot\__main__.py:15
+handle: <Handle bot_task_callback(<Task finishe...y, line 36)")>) at C:\Users\dfitz\PycharmProjects\cadart\bot\__main__.py:15>
+Traceback (most recent call last):
+  File "C:\Users\dfitz\.virtualenvs\cadart\lib\site-packages\discord\ext\commands\bot.py", line 916, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\dfitz\PycharmProjects\cadart\bot\connect\cog.py", line 36
+    embed.add_field(name='PS4', value=value.ps4 or no_value inline=inline),
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\dfitz\PycharmProjects\cadart\bot\__main__.py", line 17, in bot_task_callback
+    raise future.exception()
+  File "C:\Users\dfitz\PycharmProjects\cadart\bot\__main__.py", line 32, in run_bot
+    await bot.load_extension(ext)
+  File "C:\Users\dfitz\.virtualenvs\cadart\lib\site-packages\discord\ext\commands\bot.py", line 994, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\dfitz\.virtualenvs\cadart\lib\site-packages\discord\ext\commands\bot.py", line 919, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'bot.connect.cog' raised an error: SyntaxError: invalid syntax. Perhaps you forgot a comma? (cog.py, line 36)
+May 07 16:52:21 |                   asyncio | default_exception_handler |  ERROR | Exception in callback bot_task_callback(<Task finishe...y, line 36)")>) at C:\Users\dfitz\PycharmProjects\cadart\bot\__main__.py:15
+handle: <Handle bot_task_callback(<Task finishe...y, line 36)")>) at C:\Users\dfitz\PycharmProjects\cadart\bot\__main__.py:15>
+Traceback (most recent call last):
+  File "C:\Users\dfitz\.virtualenvs\cadart\lib\site-packages\discord\ext\commands\bot.py", line 916, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\dfitz\PycharmProjects\cadart\bot\connect\cog.py", line 36
+    embed.add_field(name='PS4', value=value.ps4 or no_value inline=inline)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\dfitz\PycharmProjects\cadart\bot\__main__.py", line 17, in bot_task_callback
+    raise future.exception()
+  File "C:\Users\dfitz\PycharmProjects\cadart\bot\__main__.py", line 32, in run_bot
+    await bot.load_extension(ext)
+  File "C:\Users\dfitz\.virtualenvs\cadart\lib\site-packages\discord\ext\commands\bot.py", line 994, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\dfitz\.virtualenvs\cadart\lib\site-packages\discord\ext\commands\bot.py", line 919, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'bot.connect.cog' raised an error: SyntaxError: invalid syntax. Perhaps you forgot a comma? (cog.py, line 36)
+May 07 16:52:37 |                   asyncio | default_exception_handler |  ERROR | Exception in callback bot_task_callback(<Task finishe...y, line 45)")>) at C:\Users\dfitz\PycharmProjects\cadart\bot\__main__.py:15
+handle: <Handle bot_task_callback(<Task finishe...y, line 45)")>) at C:\Users\dfitz\PycharmProjects\cadart\bot\__main__.py:15>
+Traceback (most recent call last):
+  File "C:\Users\dfitz\.virtualenvs\cadart\lib\site-packages\discord\ext\commands\bot.py", line 916, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\dfitz\PycharmProjects\cadart\bot\connect\cog.py", line 8, in <module>
+    from bot.connect.views import ConnectionsModal
+  File "C:\Users\dfitz\PycharmProjects\cadart\bot\connect\views.py", line 45
+    roblox=self.roblox.value
+           ^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\dfitz\PycharmProjects\cadart\bot\__main__.py", line 17, in bot_task_callback
+    raise future.exception()
+  File "C:\Users\dfitz\PycharmProjects\cadart\bot\__main__.py", line 32, in run_bot
+    await bot.load_extension(ext)
+  File "C:\Users\dfitz\.virtualenvs\cadart\lib\site-packages\discord\ext\commands\bot.py", line 994, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\dfitz\.virtualenvs\cadart\lib\site-packages\discord\ext\commands\bot.py", line 919, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'bot.connect.cog' raised an error: SyntaxError: invalid syntax. Perhaps you forgot a comma? (views.py, line 45)
+May 15 13:07:22 |                   asyncio | default_exception_handler |  ERROR | Exception in callback bot_task_callback(<Task finishe...ts instead.")>) at C:\Users\Owner\PycharmProjects\cadart\bot\__main__.py:15
+handle: <Handle bot_task_callback(<Task finishe...ts instead.")>) at C:\Users\Owner\PycharmProjects\cadart\bot\__main__.py:15>
+Traceback (most recent call last):
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\Owner\PycharmProjects\cadart\bot\__main__.py", line 17, in bot_task_callback
+    raise future.exception()
+  File "C:\Users\Owner\PycharmProjects\cadart\bot\__main__.py", line 35, in run_bot
+    await bot.start(token)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 682, in start
+    await self.connect(reconnect=reconnect)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 619, in connect
+    raise PrivilegedIntentsRequired(exc.shard_id) from None
+discord.errors.PrivilegedIntentsRequired: Shard ID None is requesting privileged intents that have not been explicitly enabled in the developer portal. It is recommended to go to https://discord.com/developers/applications/ and explicitly enable the privileged intents within your application's page. If this is not possible, then consider disabling the privileged intents instead.
+May 15 13:10:25 |                   asyncio | default_exception_handler |  ERROR | Exception in callback bot_task_callback(<Task finishe...ts instead.")>) at C:\Users\Owner\PycharmProjects\cadart\bot\__main__.py:15
+handle: <Handle bot_task_callback(<Task finishe...ts instead.")>) at C:\Users\Owner\PycharmProjects\cadart\bot\__main__.py:15>
+Traceback (most recent call last):
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\Owner\PycharmProjects\cadart\bot\__main__.py", line 17, in bot_task_callback
+    raise future.exception()
+  File "C:\Users\Owner\PycharmProjects\cadart\bot\__main__.py", line 35, in run_bot
+    await bot.start(token)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 682, in start
+    await self.connect(reconnect=reconnect)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 619, in connect
+    raise PrivilegedIntentsRequired(exc.shard_id) from None
+discord.errors.PrivilegedIntentsRequired: Shard ID None is requesting privileged intents that have not been explicitly enabled in the developer portal. It is recommended to go to https://discord.com/developers/applications/ and explicitly enable the privileged intents within your application's page. If this is not possible, then consider disabling the privileged intents instead.
+May 15 14:49:34 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 0.88s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 01:32:57 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 0.00s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 01:32:57 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 1.56s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 01:32:59 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 2.74s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 01:33:02 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 9.56s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 01:33:11 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 11.24s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 01:33:23 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 22.50s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 01:33:45 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 9.61s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 01:34:06 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 188.60s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 01:37:25 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 301.86s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 01:42:27 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 701.34s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 01:54:09 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 123.76s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 01:56:24 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 540.60s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 02:05:24 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 347.95s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 02:11:23 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 289.87s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 02:16:13 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 168.41s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 02:19:13 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 94.83s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 02:20:58 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 724.54s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 02:33:14 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 602.62s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 02:43:17 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 327.82s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 02:48:45 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 413.69s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 02:55:38 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 811.40s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 03:09:10 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 889.31s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+May 17 03:23:59 |            discord.client |                   connect |  ERROR | Attempting a reconnect in 707.40s
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\client.py", line 579, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\Owner\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\gateway.py", line 358, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 2044, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\discord\http.py", line 440, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Owner\PycharmProjects\cadart\venv\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
